@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Beverley Huynh Wardrobe</title>
+
+<link rel="stylesheet" type="text/css" href="css/beverley.css">
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Monsieur+La+Doulaise' rel='stylesheet' type='text/css'>
+
+<script>
+   
+// <!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+// <!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+
+</head>
+
+<body>
+
+	<header id="header">
+	<div id="logo"><a href=""> BeverleyHuynh </a></div>
+
+	<nav id="nav">
+		<ul>
+		<li><a href="#about" title="Next Section" >ABOUT</a></li>
+		<li><a href="#work" title="Next Section" >WORK</a></li>
+		<li><a href="#clients" title="Next Section" >CLIENTS</a></li>
+		<li><a href="#contact" title="Next Section" >CONTACT</a></li>
+		<li><a href="#blog" title="Next Section" >BLOG</a></li>
+		</ul>
+	</nav>
+	</header>
+
+	<div id="about">
+
+			<h2>hey there</h2>
+
+			<div class="box_text">
+			<p>Midi dungaree pastel chunky sole So-Cal. Neutral A.P.C. sneaker skirt washed out cable knit lilac sports luxe. Givenchy playsuit skinny jeans boots la marinière powder blue. Denim shorts white plaited grunge clutch bandeau texture tortoise-shell sunglasses Cara D. collarless.</p>
+			</div>
+			</div>
+
+	<div id="box">	
+		<div id="work">
+			
+	     	<div id="g1">GALLERY 1</div>
+	     	<div id="g2">GALLERY 2</div>
+	     	<div id="g3">GALLERY 3</div>
+	     	<div id="g4">GALLERY 4</div>
+	     	<div id="g5">GALLERY 5</div>
+	     	<div id="g6">GALLERY 5</div>
+		</div>	
+		</div>
+
+
+	<div id="clients">
+		<div class="content">
+			<h2>rollin' with my homies</h2>
+			
+			<div id="divider"></div>
+
+			<div class="client_top">
+				<h3>CLIENT 1</h3>
+				<p>Cotton flats Jil Sander Vasari leggings tucked t-shirt knot ponytail vintage Levi. Seam midi texture crop Furla silhouette oversized sweatshirt bomber minimal white shirt. Razor pleats Céline ribbed 
+				Hermès sneaker Prada Saffiano chignon.</p>
+				
+				<div id="divider_sub1"></div>
+				
+			</div>
+
+
+			<div class="client_top">
+				<h3>CLIENT 2</h3>
+				<p>Cotton flats Jil Sander Vasari leggings tucked t-shirt knot ponytail vintage Levi. Seam midi texture crop Furla silhouette oversized sweatshirt bomber minimal white shirt. Razor pleats Céline ribbed Hermès sneaker Prada Saffiano chignon.</p>
+
+				<div id="divider_sub2"></div>
+
+			</div>
+
+			<div class="client_top">
+				<h3>CLIENT 3</h3>
+				<p>Cotton flats Jil Sander Vasari leggings tucked t-shirt knot ponytail vintage Levi. Seam midi texture crop Furla silhouette oversized sweatshirt bomber minimal white shirt. Razor pleats Céline ribbed Hermès sneaker Prada Saffiano chignon.</p>
+
+				<div id="divider_sub3"></div>
+
+			</div>
+
+			<div class="client_bot">
+				<h3>CLIENT 4</h3>
+				<p>Cotton flats Jil Sander Vasari leggings tucked t-shirt knot ponytail vintage Levi. Seam midi texture crop Furla silhouette oversized sweatshirt bomber minimal white shirt. Razor pleats Céline ribbed Hermès sneaker Prada Saffiano chignon.</p>
+				</div>
+
+			<div class="client_bot">
+				<h3>CLIENT 5</h3>
+				<p>Cotton flats Jil Sander Vasari leggings tucked t-shirt knot ponytail vintage Levi. Seam midi texture crop Furla silhouette oversized sweatshirt bomber minimal white shirt. Razor pleats Céline ribbed Hermès sneaker Prada Saffiano chignon.</p>
+				</div>
+
+			<div class="client_bot">
+				<h3>CLIENT 6</h3>
+				<p>Cotton flats Jil Sander Vasari leggings tucked t-shirt knot ponytail vintage Levi. Seam midi texture crop Furla silhouette oversized sweatshirt bomber minimal white shirt. Razor pleats Céline ribbed Hermès sneaker Prada Saffiano chignon.</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="quote">
+			<div id="quote_box">
+				<div class="quote_container">
+				<h1 class="white">&ldquo;In order to be irreplaceable, one must always be different&rdquo;</h1>
+				<h3 class="name">- COCO CHANEL</h3>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact">
+			<h2 class="white">connect with me</h2>
+				
+			<div class="contactme">
+
+				<form name="contact-form" method="get" action="thanks.html">
+			        <label>Full name</label><br/><br/>
+			        <input id="full-name" type="text" placeholder="Jane Doe" maxlength="40">
+			        <br><br>
+			        <label>E-mail</label><br/><br/>
+			        <input id="email" type="email" placeholder="jdoe@email.com" maxlength="40">
+			        <br><br>			        
+			        <label>Phone Number</label><br/><br/>
+			        <input id="phone" type="tel" placeholder="123-456-8910" maxlength="12">
+			        <br><br>
+			        <textarea name="description">Drop me a line!</textarea>
+	       			<br><br>
+	       			<input type="submit" value="Connect" style="width:80px; height:30px;padding:5px;font-size:1em;background-color:#014373;border-radius:6px;color:#F2F2F2;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;" />
+		       	</form>
+		    
+		    <div class="sm_container">
+		       <div id="pinterest"></div>
+		       <div id="twitter"></div>
+		       <div id="instagram"></div>
+		    </div>
+		    </div>
+		</div>
+     
+</body>
+</html>
